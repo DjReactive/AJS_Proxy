@@ -4,7 +4,7 @@ export const obj = {
   level: 2,
   attack: 80,
   defence: 40,
-}
+};
 
 function keyInObj(object, key) {
   for (const k in object) if (k === key) return true;
