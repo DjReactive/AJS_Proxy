@@ -1,4 +1,4 @@
-import {orderByProps, obj} from './app.js';
+import { orderByProps, obj } from './app';
 
 test('Character Sorting function ', () => {
   const objEqual = {
@@ -6,7 +6,7 @@ test('Character Sorting function ', () => {
     level: 2,
     attack: 80,
     defence: 40,
-    health: 10
-  }
-  expect(orderByProps(obj, ['level', 'name'])).toEqual(objEqual);
+    health: 10,
+  };
+  expect(orderByProps(obj, ['name', 'level'])).toEqual(objEqual);
 });
